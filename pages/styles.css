@@ -1,69 +1,59 @@
+:root {
+    --c1: hsl(0, 0%, 20%);
+    --darkC1: hsl(0, 0%, 10%);
+    --c2: hsl(0, 0%, 90%);
+    --darkC2: hsl(0, 0%, 80%);
+    --altC1: hsl(120, 40%, 50%);
+    --darkAltC1: hsl(120, 40%, 40%);
+    --altC2: hsl(240, 40%, 50%);
+    --darkAltC2: hsl(240, 40%, 40%);
+}
+
 body {
-    background: linear-gradient(to right, hsl(0, 0%, 15%), hsl(0, 0%, 20%));
+    background-color: var(--c1);
     font-family: Arial, Helvetica, sans-serif;
-    display: flex;
+    display:flex;
     justify-content: center;
+}
+
+.page-container {
+    background-color: var(--c2);
+    color: var(--c1);
+    margin: 50px 25px 50px 25px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-container {
+    text-align: center;
 }
 
 .title {
     font-size: 3em;
 }
 
-.page-container {
-    background-color: white;
-    width: 90%;
-    max-width: 1000px;
-    border-radius: 10px;
+.homepage-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 5px 10px;
+    align-items: baseline;
+}
+
+.text-block {
     text-align: center;
 }
 
-.homepage-content-container {
-    background-color: hsl(200, 30%, 45%);
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.collum {
-    width: 100%;
-    color: white;
-    margin-left: 10px;
-    margin-right: 10px;
-    font-weight: 500;
-}
-
-.selector-container {
-    width: 100%;
-    padding: 20px 0px 20px 0px;
-    border-top: 2px solid;
-    border-bottom: 2px solid;
-    background-color: hsl(200, 30%, 45%);
-}
-
-.tree-background {
-    background-image: url("../public/forest-background.jpg");
-    height: 300px;
-}
-
-.selector {
-    font-size: 2em;
-}
-
 .button1 {
-    border-radius: 3px;
+    background-color: var(--altC2);
+    color: var(--c2);
+    font-size: 1.5em;
+    border-radius: 10px;
     border: 0px;
-    background-color: hsl(0, 0%, 20%);
-    color: hsl(0, 0%, 80%);
-    padding: 4px 8px 4px 8px;
-    font-weight: 400;
-    transition: box-shadow 50ms, background-color 250ms;
+    transition: box-shadow 200ms;
 }
 
 .button1:hover {
-    background-color: hsl(200, 30%, 35%);
-    box-shadow: 5px 5px 5px hsl(0, 0%, 20%);
-}
-
-.selector {
-    background-color: hsl(200, 30%, 45%);
+    background-color: var(--darkAltC2);
+    box-shadow: 2px 2px hsl(0, 0%, 20%);
 }
