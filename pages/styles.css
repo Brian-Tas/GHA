@@ -1,21 +1,69 @@
 body {
+    background: linear-gradient(to right, hsl(0, 0%, 15%), hsl(0, 0%, 20%));
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
-    align-items: center;
+}
 
-    background-color: hsl(0, 0%, 20%);
-
-    font-family: Arial, Helvetica, sans-serif;
+.title {
+    font-size: 3em;
 }
 
 .page-container {
     background-color: white;
-    padding: 10px 100px 10px 100px;
+    width: 90%;
+    max-width: 1000px;
     border-radius: 10px;
+    text-align: center;
+}
+
+.homepage-content-container {
+    background-color: hsl(200, 30%, 45%);
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.collum {
+    width: 100%;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: 500;
 }
 
 .selector-container {
-    background-color: hsl(200, 67%, 43%);
-    border-radius: 10px;
-    padding: 5px 10px 5px 10px;
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    background-color: hsl(200, 30%, 45%);
+}
+
+.tree-background {
+    background-image: url("../public/forest-background.jpg");
+    height: 300px;
+}
+
+.selector {
+    font-size: 2em;
+}
+
+.button1 {
+    border-radius: 3px;
+    border: 0px;
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 80%);
+    padding: 4px 8px 4px 8px;
+    font-weight: 400;
+    transition: box-shadow 50ms, background-color 250ms;
+}
+
+.button1:hover {
+    background-color: hsl(200, 30%, 35%);
+    box-shadow: 5px 5px 5px hsl(0, 0%, 20%);
+}
+
+.selector {
+    background-color: hsl(200, 30%, 45%);
 }
