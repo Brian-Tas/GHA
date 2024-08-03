@@ -36,50 +36,6 @@ body {
     font-size: 1em;
 }
 
-.thermography-content-container {
-    display: grid;
-    grid-template-columns: 90px 90px 90px 90px 90px 90px 90px 90px 90px 90px;
-    grid-template-rows: 90px 90px 90px 90px 90px 90px 90px 90px 90px 90px;
-    gap: 10px;
-    height: 1010px;
-    
-}
-
-.thermography-content-container .grid-item1 { /*how does it work*/
-    grid-area: 1 / 5 / 6 / 11;
-    font-size: 1.5em;
-}
-
-.thermography-content-container .grid-item2 { /*Chronic Illness*/
-    grid-area: 8 / 1 / 11 / 5;
-    font-size: 1.3em;
-}
-
-.thermography-content-container .grid-item3 { /* Unlike Other*/
-    grid-area: 1 / 1 / 3 / 5;
-    font-size: 1.3em;
-}
-
-
-.thermography-content-container .grid-item4 { /* What is it like*/
-    grid-area: 6 / 5 / 11 / 9;
-    font-size: 1.5em;
-}
-
-.thermography-content-container .grid-item5 { /* Quote */
-    grid-area: 3 / 1 / 3 / 5;
-    font-size: 1.7em;
-}
-
-#family-image {
-   grid-area: 1 / 1 / 5 / 3;
-}
-
-#body-thermal-image {
-    grid-area: 6 / 9 / 11 / 11;
-    width: 180px;
-}
-
 .subheading {
     color: var(--altC1);
     text-align: center;
